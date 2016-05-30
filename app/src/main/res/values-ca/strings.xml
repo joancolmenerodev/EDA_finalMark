@@ -17,7 +17,7 @@
     <string name="title_practica3">Pràctica 3</string>
     <string name="title_practica4">Pràctica 4</string>
     <string name="title_qualificacio_practiques">Qualificació de pràctiques :</string>
-    <string name="title_qualificiacio_ponderada_tp">Qualificació ponderada teoria + pràctiques :</string>
+    <string name="title_qualificiacio_ponderada_tp">Qualificació ponderada teo+pr :</string>
     <string name="title_percentatge_assistencia">Percentatge d\'assistència</string>
     <string name="bt_aceptar">Acceptar</string>
     <string name="progressbar_calculando">Calculant...</string>
