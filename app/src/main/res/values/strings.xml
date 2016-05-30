@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EDA</string>
+    <string name="title_toolbar">\u0020 EDA</string>
+    <string name="qf_aprovat">Has aprovat! Has tret ≈ %1$s!</string>
+    <string name="qf_suspes">Has suspes! Has tret ≈ %1$s!</string>
+    <string name="error_missing_value">Falten valors!</string>
+    <string name="error_valor_introduit">Valor introduït no vàlid!</string>
+    <string name="error_valor_enter">El valor ha de ser enter!</string>
+    <string name="title_sistemaevaluacions">Sistema d\'avaluació</string>
+    <string name="title_percentatge_examens">‣ Percentatge d\'exàmens</string>
+    <string name="title_primera_prova">Primera prova</string>
+    <string name="title_segona_prova">Segona prova</string>
+    <string name="title_qualificacio_teoria">Qualificació de teoria :</string>
+    <string name="title_percentatge_practiques">‣ Percentatge de pràctiques</string>
+    <string name="title_practica1">Pràctica 1</string>
+    <string name="title_practica2">Pràctica 2</string>
+    <string name="title_practica3">Pràctica 3</string>
+    <string name="title_practica4">Pràctica 4</string>
+    <string name="title_qualificacio_practiques">Qualificació de pràctiques :</string>
+    <string name="title_qualificiacio_ponderada_tp">Qualificació ponderada teoria + pràctiques :</string>
+    <string name="title_percentatge_assistencia">Percentatge d\'assistència</string>
+    <string name="bt_aceptar">Acceptar</string>
+    <string name="progressbar_calculando">Calculant...</string>
+    <string name="hint_00">00</string>
+</resources>

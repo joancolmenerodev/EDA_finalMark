@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.appenjoyer.eda.MainActivity">
+    <item
+        android:id="@+id/action_verify"
+        android:icon="@drawable/verify"
+        android:orderInCategory="100"
+        android:title="Verify"
+        app:showAsAction="always" />
+</menu>

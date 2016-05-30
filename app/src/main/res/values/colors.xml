@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E69D00</color>
+    <color name="white">#fff</color>
+    <color name="redsuspes">#e40613</color>
+    <color name="verdaprovat">#3bab34</color>
+
+    <color name="colorAccent">#FFCA59</color>
+</resources>
