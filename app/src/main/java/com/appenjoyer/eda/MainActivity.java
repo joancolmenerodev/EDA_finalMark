@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -170,16 +171,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 iv.setVisibility(View.VISIBLE);
                 if(qf == -1) mDialog.dismiss();
                 qf = qf /10;
+                String formattedString = df2.format(qf);
                 if(qf>5){
                     //Aprobat
                     iv.setBackgroundResource(R.drawable.approved);
-                    tvNota.setText(String.format(getString(R.string.qf_suspes),qf));
+                    tvNota.setText(String.format(getString(R.string.qf_aprovat),formattedString));
                     tvNota.setTextColor(ContextCompat.getColor(mActivity, R.color.verdaprovat));
                 }
                 else{
                     //Suspes
                     iv.setBackgroundResource(R.drawable.suspended);
-                    tvNota.setText(String.format(getString(R.string.qf_suspes),qf));
+                    tvNota.setText(String.format(getString(R.string.qf_suspes),formattedString));
                     tvNota.setTextColor(ContextCompat.getColor(mActivity, R.color.redsuspes));
                 }
 
@@ -201,23 +203,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double As = 0;
         try {
             double teo = ConvertToDouble(tvTeo);
+            Log.d("TEO", String.valueOf(teo));
             double Qtp = ConvertToDouble(tvQPT);
+            Log.d("Qtp", String.valueOf(Qtp));
             double pr = ConvertToDouble(tvPr);
+            Log.d("pr", String.valueOf(pr));
             int iPctAs = Integer.valueOf(etPctAs.getText().toString());
             if(iPctAs>80){
                 As = (iPctAs-80)*0.25+5;
             }
-            if((teo/10)<4){
+            if(teo<40){
+                Log.d("Entro a ", "min");
                 return Math.min(teo,Qtp);
             }
-            if((teo/10)>=4 && (pr/10)>=4){
+            if((teo)>=40 && (pr)>=40){
+                Log.d("Entro a ", "max");
                 return Math.max(Qtp, (Qtp*0.7) + (As * 0.3));
             }
-            if((teo/10)>=4 && (teo/10)<4){
+            if((teo)>=40 && (pr)<40){
+                Log.d("Entro a ", "altre");
                 return Qtp;
+
             }
         }
         catch (Exception e){
+            Log.d("Entro a ", "catch");
             ShowCustomToast.ShowToast(mActivity,getString(R.string.error_missing_value));
             return -1;
         }
