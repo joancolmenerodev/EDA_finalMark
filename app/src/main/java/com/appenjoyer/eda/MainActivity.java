@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlSessio.add(new Sessio("Sessió 12", 50, true));
         AlSessio.add(new Sessio("Sessió 13", 100, true));
         AlSessio.add(new Sessio("Sessió 14", 50, true));
+        AlSessio.add(new Sessio("Sessió 15", 100, true));
+        AlSessio.add(new Sessio("Sessió 16", 50, true));
+        AlSessio.add(new Sessio("Sessió 17", 100, true));
+        AlSessio.add(new Sessio("Sessió 18", 50, true));
         AlSessio.add(new Sessio("Sessió pr 01", 100, true));
         AlSessio.add(new Sessio("Sessió pr 02", 100, true));
         AlSessio.add(new Sessio("Sessió pr 03", 100, true));
@@ -203,31 +207,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double As = 0;
         try {
             double teo = ConvertToDouble(tvTeo);
-            Log.d("TEO", String.valueOf(teo));
             double Qtp = ConvertToDouble(tvQPT);
-            Log.d("Qtp", String.valueOf(Qtp));
             double pr = ConvertToDouble(tvPr);
-            Log.d("pr", String.valueOf(pr));
             int iPctAs = Integer.valueOf(etPctAs.getText().toString());
             if(iPctAs>80){
                 As = (iPctAs-80)*0.25+5;
             }
             if(teo<40){
-                Log.d("Entro a ", "min");
                 return Math.min(teo,Qtp);
             }
             if((teo)>=40 && (pr)>=40){
-                Log.d("Entro a ", "max");
                 return Math.max(Qtp, (Qtp*0.7) + (As * 0.3));
             }
             if((teo)>=40 && (pr)<40){
-                Log.d("Entro a ", "altre");
                 return Qtp;
 
             }
         }
         catch (Exception e){
-            Log.d("Entro a ", "catch");
             ShowCustomToast.ShowToast(mActivity,getString(R.string.error_missing_value));
             return -1;
         }
