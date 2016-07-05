@@ -7,7 +7,12 @@ If you find an issue or bug feel free to send me the issue/bug report at : <a hr
 
 This is the main screen where you can fill the values with your marks
 
-<img src="http://imgur.com/9FW7pfZ">
+![alt tag](http://imgur.com/9FW7pfZ)
+
+And clicking on the verify button on the right-top on the screen you'll know if you are aproved or not.
+
+![alt tag](http://imgur.com/eHHppHe)
+
 
 Created by @JoanColmenero
 
