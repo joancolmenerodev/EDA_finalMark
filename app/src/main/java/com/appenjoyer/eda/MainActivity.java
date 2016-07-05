@@ -72,8 +72,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Init the views
         initViews();
         mPrefs  = getPreferences(MODE_PRIVATE);
+        //Show information about marks
+        ShowInformationMarks();
         //FillArray at least the first time
         FillArrayList();
+    }
+
+    private void ShowInformationMarks() {
+        if(!mPrefs.getBoolean("understood", false)) {
+            final Dialog mDialog;
+            mDialog = new Dialog(this);
+            mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            mDialog.setContentView(R.layout.custom_info_dialog);
+            mDialog.setCanceledOnTouchOutside(false);
+            mDialog.setCancelable(false);
+            Button bt = (Button) mDialog.findViewById(R.id.btEntendido);
+            bt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mPrefs.edit().putBoolean("understood",true).apply();
+                    mDialog.dismiss();
+                }
+            });
+            mDialog.show();
+        }
     }
 
     private void FillArrayList(){
@@ -88,9 +110,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlSessio.add(new Sessio("Sessió 05", 100, true));
         AlSessio.add(new Sessio("Sessió 06", 50, true));
         AlSessio.add(new Sessio("Sessió 07", 100, true));
-        AlSessio.add(new Sessio("Sessió 08", 50, true));
-        AlSessio.add(new Sessio("Sessió 09", 100, true));
-        AlSessio.add(new Sessio("Sessió 10", 50, true));
+        AlSessio.add(new Sessio("Sessió 08", 100, true));
+        AlSessio.add(new Sessio("Sessió 09", 50, true));
+        AlSessio.add(new Sessio("Sessió 10", 100, true));
         AlSessio.add(new Sessio("Sessió 11", 100, true));
         AlSessio.add(new Sessio("Sessió 12", 50, true));
         AlSessio.add(new Sessio("Sessió 13", 100, true));
@@ -98,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlSessio.add(new Sessio("Sessió 15", 100, true));
         AlSessio.add(new Sessio("Sessió 16", 50, true));
         AlSessio.add(new Sessio("Sessió 17", 100, true));
-        AlSessio.add(new Sessio("Sessió 18", 50, true));
+        AlSessio.add(new Sessio("Sessió 19", 50, true));
         AlSessio.add(new Sessio("Sessió pr 01", 100, true));
         AlSessio.add(new Sessio("Sessió pr 02", 100, true));
         AlSessio.add(new Sessio("Sessió pr 03", 100, true));
