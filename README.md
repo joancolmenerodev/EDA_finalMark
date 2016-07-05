@@ -7,7 +7,7 @@ If you find an issue or bug feel free to send me the issue/bug report at : <a hr
 
 This is the main screen where you can fill the values with your marks
 
-<img src="http://imgur.com/9FW7pfZ"/>
+<img src="http://imgur.com/9FW7pfZ">
 
 Created by @JoanColmenero
 
