@@ -358,8 +358,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     double pe1, pe2;
                     pe1 = Double.parseDouble(etPe1.getText().toString());
                     pe2 = Double.parseDouble(etPe2.getText().toString());
-                    double res = Math.max((pe1+pe2)/2,pe2);
-                    String formattedString = df2.format(res);
+                    double result = Math.max((pe1+pe2)/2,pe2);
+                    String formattedString = df2.format(result);
                     tvTeo.setText(formattedString);
                 }
             }
