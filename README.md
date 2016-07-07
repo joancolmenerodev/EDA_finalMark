@@ -14,7 +14,7 @@ Pressing the button to check on the top right of the screen, you will know wheth
 ![image2](https://cloud.githubusercontent.com/assets/15377724/16593962/3e2fb664-42e8-11e6-9cf1-f5874fbb6adb.png)
 
 
-Too easy, right? If you want to try it out just download it --> <a href="https://mega.nz/#!ToQADQ6Q!leSe-I3V-dG5JfQ9O4GeM5K0R9nuHuyupK7zoAvflnc">EdaApp</a>
+Too easy, right? If you want to try it out just download it --> <a href="https://mega.nz/#!m0hxVBpL!wPTwMiqC1EEnd84IlVvlbZa8Rb8qrkmoN1nMeKjfvng">EdaApp</a>
 
 
 Created by @JoanColmenero
