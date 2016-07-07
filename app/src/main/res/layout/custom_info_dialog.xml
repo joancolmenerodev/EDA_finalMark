@@ -1,9 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
+
     android:orientation="vertical" >
 
     <LinearLayout
@@ -13,6 +13,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="horizontal"
+
         tools:ignore="DisableBaselineAlignment" >
 
 
@@ -21,7 +22,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="22sp"
-            android:text="@string/title_qualificacio_final"
+            android:text="@string/title_informacion_dialog"
             tools:ignore="HardcodedText"
             android:id="@+id/textViewTitleDialog"
             />
@@ -29,41 +30,18 @@
     </LinearLayout>
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/progressbar_calculando"
-            android:id="@+id/tvCalculant"
-            android:layout_above="@+id/view_progress"
-            android:layout_centerHorizontal="true" />
-        <ProgressBar
-            android:id="@+id/view_progress"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:indeterminate="true"
-            android:indeterminateTintMode="src_in"
-            android:indeterminateTint="@color/colorPrimary"
+            android:text="@string/text_info_dialog"
+            android:id="@+id/tvInfoDialog"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ivAprovat"
-            android:scaleType="fitXY"
-            android:layout_centerVertical="true"
-            android:visibility="invisible"
-            android:layout_centerHorizontal="true" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvNotaqf"
-            android:layout_marginTop="8dp"
-            android:layout_below="@+id/ivAprovat"
-            android:layout_centerHorizontal="true" />
+
     </RelativeLayout>
     <View
         android:layout_width="fill_parent"
@@ -82,12 +60,12 @@
 
         <Button
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/colorPrimary"
-            android:text= "@string/bt_aceptar"
-            android:id="@+id/btAceptarQF" />
+            android:text= "@string/bt_entendido"
+            android:id="@+id/btEntendido" />
 
     </LinearLayout>
 

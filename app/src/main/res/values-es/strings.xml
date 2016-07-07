@@ -18,8 +18,12 @@
     <string name="title_practica4">Práctica 4</string>
     <string name="title_qualificacio_practiques">Qualificación de prácticas :</string>
     <string name="title_qualificiacio_ponderada_tp">Qualificación ponderada teo+pr :</string>
+    <string name="title_qualificacio_final">Qualificación final</string>
+    <string name="title_informacion_dialog">Información</string>
+    <string name="text_info_dialog">Las notas se calculan sobre 100, por lo tanto debéis poner las notas sobre 100. \nEjemplo: Un 4,4 sería un 44.</string>
     <string name="title_percentatge_assistencia">Porcentage de asistencia</string>
     <string name="bt_aceptar">Aceptar</string>
+    <string name="bt_entendido">Entendido</string>
     <string name="progressbar_calculando">Calculando...</string>
     <string name="hint_00">00</string>
 </resources>
